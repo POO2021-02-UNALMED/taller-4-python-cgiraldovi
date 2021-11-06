@@ -25,10 +25,10 @@ class Grupo:
             lista.append(alumno)
             self.listadoAlumnos = self.listadoAlumnos + lista
         else:
-            self.listadoAlumnos = [alumno]
+            self.listadoAlumnos = []
             for x in lista:
                 self.listadoAlumnos.append(x)
-
+            self.listadoAlumnos.append(alumno)
 
     @classmethod
     def asignarNombre(cls, nombre="Grado 10"):
