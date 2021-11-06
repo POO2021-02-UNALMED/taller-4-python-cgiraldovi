@@ -25,9 +25,8 @@ class Grupo:
             lista.append(alumno)
             self.listadoAlumnos = self.listadoAlumnos + lista
         else:
-            self.listadoAlumnos = [alumno]
-            for x in lista:
-                self.listadoAlumnos.append(x)
+            self.listadoAlumnos = lista
+            self.listadoAlumnos.append(alumno)
 
 
     @classmethod
